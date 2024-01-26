@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouncing BAll</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background-image: url('./img.jpg');
+      background-size: cover; 
+      background-color: #8fc9bb; /* Set blue background color */
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* 100% of the viewport height */
+      margin: 0;
+      font-size: 45px;
+      color: azure;
+    }
+
+    .ball {
+      width: 100px;
+      height: 100px;
+      background-color: #e9edef; /* Set ball color */
+      border-radius: 70px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      animation: X 3s linear infinite, Y 1s ease-out infinite alternate;
+      
+    }
+
+    @keyframes X {
+        from{
+            left: 0;
+        }
+        to{
+            left: 100%;
+        }
+    }
+    @keyframes Y {
+        from{
+            bottom: 0;
+        }
+        to{
+            bottom: 100%;
+        }
+    }
+  </style>
+  <title>Bouncing Ball Animation</title>
+</head>
+<body>
+  <div class="ball"></div>
+  <h1>!!!Bouncing_Ball!!!</h1>
+</body>
+</html>
